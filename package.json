@@ -1,0 +1,24 @@
+{
+  "name": "serverless-rust",
+  "version": "0.0.1",
+  "description": "Serverless Rust Core",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/serverless-rust/serverless-rust.git"
+  },
+  "keywords": [
+    "serverless",
+    "aws",
+    "rust"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/serverless-rust/serverless-rust/issues"
+  },
+  "homepage": "https://github.com/serverless-rust/serverless-rust#readme"
+}
