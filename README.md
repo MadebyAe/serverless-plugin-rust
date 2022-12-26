@@ -1,6 +1,6 @@
 **Serverless framework** plugin for blazingly-fast rust functions.
 
-![serverless-rust-plugin credits https://rustacean.net](https://rustacean.net/assets/rustacean-flat-happy.png | width=200)
+<img src="https://rustacean.net/assets/rustacean-flat-happy.png" alt="serverless-rust-plugin" align="left" height="120" width="auto">
 
 ## Quick start
 
