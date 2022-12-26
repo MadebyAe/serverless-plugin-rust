@@ -11,9 +11,9 @@ class ServerlessRustPlugin {
     this.servicePath = this.serverless.config.servicePath || '';
     this.hooks = {
       'initialize': () => this.initialize(),
-      "before:package:package": () => this.build('p'),
-      "before:package:createDeploymentArtifacts": () => this.build('cda'),
-      "before:deploy:function:packageFunction": () => this.build('pf'),
+      "before:package:package": () => this.build(),
+      "before:package:createDeploymentArtifacts": () => this.build(),
+      "before:deploy:function:packageFunction": () => this.build(),
       'before:deploy:deploy': () => this.beforeDeploy(),
       'after:deploy:deploy': () => this.afterDeploy(),
     };
@@ -31,15 +31,6 @@ class ServerlessRustPlugin {
 
   get functions() {
     return this.serverless.service.getAllFunctions();
-  }
-
-  get basePath() {
-    return join(
-      this.servicePath,
-      'target/lambda',
-      func.handler,
-      'bootstrap.zip',
-    );
   }
 
   beforeDeploy() {
@@ -76,6 +67,13 @@ class ServerlessRustPlugin {
 
       this.serverless.cli.log(`Building Rust ${func.handler} func...`);
 
+      const basePath = join(
+        this.servicePath,
+        'target/lambda',
+        func.handler,
+        'bootstrap.zip',
+      );
+
       const targetPath = join(
         this.servicePath,
         'target/lambda',
@@ -83,9 +81,9 @@ class ServerlessRustPlugin {
         `${func.handler}-bootstrap.zip`
       );
 
-      renameSync(this.basePath, newPath);
+      renameSync(basePath, targetPath);
       func.package = func.package || {};
-      func.package.artifact = newPath;
+      func.package.artifact = targetPath;
     });
   }
 }

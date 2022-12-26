@@ -1,24 +1,26 @@
 {
-  "name": "serverless-rust",
+  "name": "serverless-rust-plugin",
   "version": "0.0.1",
-  "description": "Serverless Rust Core",
+  "description": "Serverless plugin for Balzingly-fast rust functions",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/serverless-rust/serverless-rust.git"
+    "url": "git+https://github.com/MadebyAe/serverless-rust-plugin.git"
   },
   "keywords": [
-    "serverless",
     "aws",
-    "rust"
+    "lambda",
+    "rust",
+    "rustlang",
+    "serverless"
   ],
-  "author": "",
+  "author": "Ángel Estrada",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/serverless-rust/serverless-rust/issues"
+    "url": "https://github.com/MadebyAe/serverless-rust-plugin/issues"
   },
-  "homepage": "https://github.com/serverless-rust/serverless-rust#readme"
+  "homepage": "https://github.com/MadebyAe/serverless-plugin-rust#readme"
 }
