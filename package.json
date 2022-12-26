@@ -1,5 +1,5 @@
 {
-  "name": "serverless-rust-plugin",
+  "name": "serverless-plugin-rust",
   "version": "0.0.1",
   "description": "Serverless plugin for Balzingly-fast rust functions",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MadebyAe/serverless-rust-plugin.git"
+    "url": "git+https://github.com/MadebyAe/serverless-plugin-rust.git"
   },
   "keywords": [
     "aws",
@@ -20,7 +20,7 @@
   "author": "Ángel Estrada",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/MadebyAe/serverless-rust-plugin/issues"
+    "url": "https://github.com/MadebyAe/serverless-plugin-rust/issues"
   },
   "homepage": "https://github.com/MadebyAe/serverless-plugin-rust#readme"
 }

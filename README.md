@@ -1,6 +1,6 @@
 **Serverless framework** plugin for blazingly-fast rust functions.
 
-<img src="https://rustacean.net/assets/rustacean-flat-happy.png" alt="serverless-rust-plugin" height="120" width="auto" />
+<img src="https://rustacean.net/assets/rustacean-flat-happy.png" alt="serverless-plugin-rust" height="120" width="auto" />
 
 
 
@@ -17,7 +17,7 @@ Make sure you have the following installed before starting:
 
 ### Install
 ```console
-npm install serverless-rust-plugin --save-dev
+npm install serverless-plugin-rust --save-dev
 ```
 
 ## Usage
@@ -48,7 +48,7 @@ functions:
           method: get
 
 plugins:
-  - serverless-rust-plugin
+  - serverless-plugin-rust
 ```
 
 ```console

@@ -4,7 +4,7 @@ const { join } = require('path');
 const { spawnSync } = require('child_process');
 const { renameSync } = require('fs');
 
-class ServerlessRustPlugin {
+class ServerlessPluginRust {
   constructor(serverless, options) {
     this.serverless = serverless;
     this.options = options;
@@ -88,4 +88,4 @@ class ServerlessRustPlugin {
   }
 }
 
-module.exports = ServerlessRustPlugin;
+module.exports = ServerlessPluginRust;
