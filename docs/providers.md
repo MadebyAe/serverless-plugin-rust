@@ -3,4 +3,4 @@
 - [x] AWS
 - [ ] Cloudflare
 - [ ] Google Cloud
-- [ ] Microsoft Azure 
+- [ ] Microsoft Azure

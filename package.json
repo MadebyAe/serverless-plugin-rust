@@ -1,7 +1,7 @@
 {
   "name": "serverless-plugin-rust",
-  "version": "0.0.1",
-  "description": "Serverless plugin for Balzingly-fast rust functions",
+  "version": "0.1.0-alpha.1",
+  "description": "Serverless plugin for Blazingly-fast rust functions",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
