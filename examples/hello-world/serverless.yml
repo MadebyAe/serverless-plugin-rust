@@ -1,0 +1,29 @@
+service: serverless-plugin-rust-hello-world
+
+provider:
+  name: aws
+  stage: dev
+  runtime: provided.al2
+  region: us-east-1
+  versionFunctions: false
+
+package:
+  individually: true
+
+configValidationMode: error
+
+functions:
+  echo:
+    description: Rust hello world
+    handler: hello_world
+    events:
+      - http:
+          path: '/hello/{string}'
+          method: get
+          request:
+            parameters:
+              paths:
+                string: true
+
+plugins:
+  - serverless-plugin-rust
