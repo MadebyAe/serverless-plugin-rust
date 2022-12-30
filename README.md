@@ -58,6 +58,22 @@ serverless deploy
 ⚡️🚀
 
 
-### Custom serverless.yml config example
+### Examples
 
-TODO
+[hello-world](https://github.com/MadebyAe/serverless-plugin-rust/tree/main/examples/hello-world)
+
+
+### Important
+
+- Running this code might result in charges to your AWS account.
+- Running the tests might result in charges to your AWS account.
+- We recommend that you grant your code least privilege. At most, grant only the minimum permissions required to perform the task. For more information, see Grant least privilege.
+- This code is not tested in every AWS Region. For more information, see AWS Regional Services.
+
+### Roadmap
+
+- Add Google Cloud compatibility (Experimental)
+- Add Serverless options schema
+- Enable and test option to support `arm64` architecture
+- Integrate `serverless offline` and `serverless invoke`
+- Unit tests
