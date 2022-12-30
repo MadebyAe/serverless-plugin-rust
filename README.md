@@ -57,11 +57,9 @@ serverless deploy
 
 ⚡️🚀
 
-
 ### Examples
 
 [hello-world](https://github.com/MadebyAe/serverless-plugin-rust/tree/main/examples/hello-world)
-
 
 ### Important
 
