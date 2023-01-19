@@ -1,6 +1,6 @@
 {
   "name": "serverless-plugin-rust",
-  "version": "0.1.0-alpha.2",
+  "version": "0.1.0-alpha.3",
   "description": "Serverless plugin for Blazingly-fast rust functions",
   "main": "index.js",
   "scripts": {
