@@ -1,5 +1,5 @@
 *.DS_Store
 *.sw?
 
-/node_modules
-/target
+node_modules
+target

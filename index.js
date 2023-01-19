@@ -38,6 +38,10 @@ class ServerlessPluginRust {
   }
 
   beforeBuild() {
+    const targetPath = join(this.servicePath, 'target');
+
+    spawnSync('rm', ['-rf', targetPath]);
+
     const args = ['lambda', 'build', '--release', '--output-format', 'zip', this.options.arch].filter(Boolean);
     const cargo = spawnSync('cargo', args);
 

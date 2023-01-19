@@ -1,0 +1,6 @@
+[workspace]
+
+members = [
+    "member-one",
+    "member-two",
+]

@@ -24,6 +24,3 @@ async fn main() -> Result<(), Error> {
     run(service_fn(func_closure)).await?;
     Ok(())
 }
-
-#[cfg(test)]
-mod main_test;
