@@ -1,0 +1,34 @@
+service: serverless-plugin-rust-workspace
+
+provider:
+  name: aws
+  stage: dev
+  runtime: provided.al2
+  memorySize: 128
+  region: us-east-1
+  versionFunctions: false
+
+package:
+  individually: true
+
+configValidationMode: error
+
+functions:
+  member_one:
+    description: Rust member one
+    handler: member_one
+    events:
+      - http:
+          path: '/member-one'
+          method: get
+
+  member_two:
+    description: Rust member two
+    handler: member_two
+    events:
+      - http:
+          path: '/member-two'
+          method: get
+
+plugins:
+  - serverless-plugin-rust

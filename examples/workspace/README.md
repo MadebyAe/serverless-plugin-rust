@@ -26,6 +26,10 @@ cargo run
 
 ### Local development
 ```console
+cd member-one
+```
+
+```console
 cargo lambda watch
 ```
 
@@ -39,6 +43,11 @@ Response: { "message": "Hello world!" }
 ```
 
 ### Deploy
+Go back to the main `workspace` directory
+```console
+cd ..
+```
+
 ```console
 serverless deploy
 ```

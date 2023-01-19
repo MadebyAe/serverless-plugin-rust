@@ -13,7 +13,7 @@ package:
 configValidationMode: error
 
 functions:
-  echo:
+  hello_world:
     description: Rust hello world
     handler: hello_world
     events:

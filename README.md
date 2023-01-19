@@ -59,7 +59,8 @@ serverless deploy
 
 ### Examples
 
-[hello-world](https://github.com/MadebyAe/serverless-plugin-rust/tree/main/examples/hello-world)
+- [Basic hello world example](https://github.com/MadebyAe/serverless-plugin-rust/tree/main/examples/hello-world)
+- [Workspace example](https://github.com/MadebyAe/serverless-plugin-rust/tree/main/examples/workspace)
 
 ### Important
 
