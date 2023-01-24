@@ -16,6 +16,8 @@ class ServerlessPluginRust {
     this.serverless = serverless;
     this.options = options;
     this.servicePath = this.serverless.config.servicePath || '';
+    this.functions = this.serverless.service.getAllFunctions();
+
     this.hooks = {
       'initialize': () => this.initialize(),
       "before:package:package": () => this.build(),
@@ -38,10 +40,6 @@ class ServerlessPluginRust {
 
       return null;
     }
-  }
-
-  get functions() {
-    return this.serverless.service.getAllFunctions();
   }
 
   async createZip(functionName) {
@@ -139,11 +137,7 @@ class ServerlessPluginRust {
     const cargo = spawnSync('cargo', args);
     const mkdir = spawnSync('mkdir', ['target/lambda']);
 
-    const releasePath = join(
-      this.servicePath,
-      'release',
-    );
-
+    console.log(spawnSync('ls', ['-la']))
     const zips = await Promise.all(
       this.functions.map(functionName => this.createZip(functionName)),
     );
