@@ -4,6 +4,7 @@
   "description": "Serverless plugin for Blazingly-fast rust functions",
   "main": "index.js",
   "scripts": {
+    "build": "esbuild src/index.js --platform=node --bundle --minify --outfile=index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -26,5 +27,8 @@
   "dependencies": {
     "adm-zip": "^0.5.10",
     "is-ci": "^3.0.1"
+  },
+  "devDependencies": {
+    "esbuild": "^0.17.4"
   }
 }
