@@ -22,5 +22,9 @@
   "bugs": {
     "url": "https://github.com/MadebyAe/serverless-plugin-rust/issues"
   },
-  "homepage": "https://github.com/MadebyAe/serverless-plugin-rust#readme"
+  "homepage": "https://github.com/MadebyAe/serverless-plugin-rust#readme",
+  "devDependencies": {
+    "adm-zip": "^0.5.10",
+    "is-ci": "^3.0.1"
+  }
 }

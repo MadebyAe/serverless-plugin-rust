@@ -1,7 +1,7 @@
-use lambda_http::{run, service_fn, Body, Error, IntoResponse, Request, RequestExt, Response};
+use lambda_http::{run, service_fn, Body, Error, IntoResponse, Request, Response};
 use serde_json::{json};
 
-async fn member_two(request: Request) -> Response<Body> {
+async fn member_two(_request: Request) -> Response<Body> {
     let message = "Hello from member_two!";
 
     json!({ "message": message }).into_response().await
