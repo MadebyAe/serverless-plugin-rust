@@ -2,7 +2,16 @@
 
 <img src="https://rustacean.net/assets/rustacean-flat-happy.png" alt="serverless-plugin-rust" height="120" width="auto" />
 
+## Motivation
 
+### 💻 Development experience
+The goal of this project is to be accessible to beginners and experienced developers. Similar solutions require **Docker** to run or compile rust which is not practical.
+
+### 🚀 Faster time-to-market
+You can quickly deploy and update serverless applications, reducing the time it takes to bring new features to the market.
+
+### ⚡️ Blazingly-fast
+Serverless rust is blazingly-fast on serverless infrastructure.
 
 ## Quick start
 
@@ -55,12 +64,25 @@ plugins:
 serverless deploy
 ```
 
-⚡️🚀
-
-### Examples
+## Examples
 
 - [Basic hello world example](https://github.com/MadebyAe/serverless-plugin-rust/tree/main/examples/hello-world)
 - [Workspace example](https://github.com/MadebyAe/serverless-plugin-rust/tree/main/examples/workspace)
+
+## Benchmark
+
+|                     |             |           |              |
+|---------------------|-------------|-----------|--------------|
+| Rust (provided.al2) | ❄ 17.734ms  | 💾 14MB   | ⚡ 2.737ms   |
+| Go (provided)       | ❄ 59.495ms  | 💾 19MB   | ⚡ 1.578ms   |
+| Go (1.x)            | ❄ 93.72ms   | 💾 29.1MB | ⚡ 6.284ms   |
+| Node.js v16.x       | ❄ 141.038ms | 💾 57.2MB | ⚡ 9.896ms   |
+| Node.js v18.x       | ❄ 250.032ms | 💾 64.7MB | ⚡ 13.014ms  |
+| Java11              | ❄ 428.539ms | 💾 81MB   | ⚡ 121.775ms |
+
+❄ Avg Cold Start duration · 💾 Avg Memory Used · ⚡ Avg duration
+
+Source: https://maxday.github.io/lambda-perf
 
 ### Important
 
