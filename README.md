@@ -98,3 +98,7 @@ Source: https://maxday.github.io/lambda-perf
 - Enable and test option to support `arm64` architecture
 - Integrate `serverless offline` and `serverless invoke`
 - Unit tests
+
+---
+
+Made with ❤️  in San Francisco
