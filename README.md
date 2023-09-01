@@ -73,12 +73,12 @@ serverless deploy
 
 |                     |             |           |              |
 |---------------------|-------------|-----------|--------------|
-| Rust (provided.al2) | ❄ 17.734ms  | 💾 14MB   | ⚡ 2.737ms   |
-| Go (provided)       | ❄ 59.495ms  | 💾 19MB   | ⚡ 1.578ms   |
-| Go (1.x)            | ❄ 93.72ms   | 💾 29.1MB | ⚡ 6.284ms   |
-| Node.js v16.x       | ❄ 141.038ms | 💾 57.2MB | ⚡ 9.896ms   |
-| Node.js v18.x       | ❄ 250.032ms | 💾 64.7MB | ⚡ 13.014ms  |
-| Java11              | ❄ 428.539ms | 💾 81MB   | ⚡ 121.775ms |
+| Rust (provided.al2) | ❄ 17.734ms  | 💾 14MB   | ⚡ 1.18ms   |
+| Go (provided)       | ❄ 59.495ms  | 💾 19MB   | ⚡ 3.14ms   |
+| Go (1.x)            | ❄ 93.72ms   | 💾 29.1MB | ⚡ 3.14ms   |
+| Node.js v16.x       | ❄ 141.038ms | 💾 57.2MB | ⚡ 11.18ms   |
+| Node.js v18.x       | ❄ 250.032ms | 💾 64.7MB | ⚡ 8.70ms  |
+| Java11              | ❄ 428.539ms | 💾 81MB   | ⚡ 13.73ms |
 
 ❄ Avg Cold Start duration · 💾 Avg Memory Used · ⚡ Avg duration
 
