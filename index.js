@@ -11,7 +11,6 @@ class ServerlessPluginRust {
     this.service = this.serverless.service;
     this.architecture = this.service.provider?.architecture || 'x86_64';
     this.servicePath = this.serverless.config.servicePath || '';
-    console.log(this.architecture);
     this.hooks = {
       'initialize': () => this.initialize(),
       "before:package:package": () => this.build(),
@@ -50,7 +49,6 @@ class ServerlessPluginRust {
     const args = ['lambda', 'build', '--release', '--output-format', 'zip', `--${this.architecture}`].filter(Boolean);
     const cargo = spawnSync('cargo', args);
 
-    console.log(args);
     if (cargo.error) {
       throw new this.serverless.classes.Error('cargo lambda was not found in the project. Visit https://www.cargo-lambda.info for more information.');
       return null;
