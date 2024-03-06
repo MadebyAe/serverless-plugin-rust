@@ -41,6 +41,7 @@ provider:
   stage: dev
   runtime: provided.al2
   region: us-east-1
+  architecture: arm64
 
 package:
   individually: true
@@ -95,7 +96,6 @@ Source: https://maxday.github.io/lambda-perf
 
 - Add Google Cloud compatibility (Experimental)
 - Add Serverless options schema
-- Enable and test option to support `arm64` architecture
 - Integrate `serverless offline` and `serverless invoke`
 - Unit tests
 
