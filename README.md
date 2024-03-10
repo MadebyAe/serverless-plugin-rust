@@ -1,7 +1,5 @@
 **Serverless framework** plugin for blazingly-fast rust functions.
 
-[![Build](https://github.com/MadebyAe/serverless-plugin-rust/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/MadebyAe/serverless-plugin-rust/actions/workflows/build.yml)
-
 <img src="https://rustacean.net/assets/rustacean-flat-happy.png" alt="serverless-plugin-rust" height="120" width="auto" />
 
 ## Status
