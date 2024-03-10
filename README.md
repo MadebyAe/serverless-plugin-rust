@@ -1,6 +1,12 @@
 **Serverless framework** plugin for blazingly-fast rust functions.
 
+[![Build](https://github.com/MadebyAe/serverless-plugin-rust/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/MadebyAe/serverless-plugin-rust/actions/workflows/build.yml)
+
 <img src="https://rustacean.net/assets/rustacean-flat-happy.png" alt="serverless-plugin-rust" height="120" width="auto" />
+
+## Status
+
+[![Build](https://github.com/MadebyAe/serverless-plugin-rust/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/MadebyAe/serverless-plugin-rust/actions/workflows/build.yml)
 
 ## Motivation
 
@@ -15,13 +21,15 @@ Serverless rust is blazingly-fast on serverless infrastructure.
 
 ## Quick start
 
+[![Build](https://github.com/MadebyAe/serverless-plugin-rust/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/MadebyAe/serverless-plugin-rust/actions/workflows/build.yml)
+
 ### Prerequisites
 
 Make sure you have the following installed before starting:
 
 - [Node.js](https://nodejs.org)
 - [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
-- [serverless](https://www.serverless.com)
+- [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html)
 - [cargo lambda](https://www.cargo-lambda.info)
 
 ### Install
@@ -87,17 +95,13 @@ Source: https://maxday.github.io/lambda-perf
 
 ### Important
 
-- Running this code might result in charges to your AWS account.
-- Running the tests might result in charges to your AWS account.
-- We recommend that you grant your code least privilege. At most, grant only the minimum permissions required to perform the task. For more information, see Grant least privilege.
-- This code is not tested in every AWS Region. For more information, see AWS Regional Services.
+- 💰 Running this code and examples might result in charges to your AWS account.
+- 🔐 We recommend that you grant your code least privilege. At most, grant only the minimum permissions required to perform the task.
 
 ### Roadmap
 
 - Add Google Cloud compatibility (Experimental)
-- Add Serverless options schema
 - Integrate `serverless offline` and `serverless invoke`
-- Unit tests
 
 ---
 
