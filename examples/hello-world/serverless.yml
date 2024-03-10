@@ -6,16 +6,21 @@ provider:
   runtime: provided.al2
   region: us-east-1
   versionFunctions: false
+  architecture: arm64
 
 package:
   individually: true
+  excludeDevDependencies: true
+  patterns:
+    - '!.serverless/**'
+    - '!node_modules/**'
 
 configValidationMode: error
 
 functions:
-  hello_world:
+  hello-world:
     description: Rust hello world
-    handler: hello_world
+    handler: hello-world
     events:
       - http:
           path: '/hello/{string}'
