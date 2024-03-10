@@ -19,8 +19,6 @@ Serverless rust is blazingly-fast on serverless infrastructure.
 
 ## Quick start
 
-[![Build](https://github.com/MadebyAe/serverless-plugin-rust/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/MadebyAe/serverless-plugin-rust/actions/workflows/build.yml)
-
 ### Prerequisites
 
 Make sure you have the following installed before starting:
