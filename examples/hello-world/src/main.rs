@@ -2,15 +2,17 @@ use lambda_http::{run, service_fn, Body, Error, IntoResponse, Request, RequestEx
 use serde_json::{json};
 
 async fn hello_world(request: Request) -> Response<Body> {
+    let version = env!("CARGO_PKG_VERSION");
+
     match request.path_parameters().first("string") {
         None => {
-            json!({ "message": "Default message" }).into_response().await
+            json!({ "message": "Default message", "version": version.to_string() }).into_response().await
         },
 
         Some(string) => {
             let message = format!("Hello {}!", string);
 
-            json!({ "message": message }).into_response().await
+            json!({ "message": message, "version": version.to_string() }).into_response().await
         }
     }
 }
