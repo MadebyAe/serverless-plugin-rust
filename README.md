@@ -15,7 +15,10 @@ The goal of this project is to be accessible to beginners and experienced develo
 You can quickly deploy and update serverless applications, reducing the time it takes to bring new features to the market.
 
 ### ⚡️ Blazingly-fast
-Serverless rust is blazingly-fast on serverless infrastructure.
+Experience unparalleled speed with serverless Rust, delivering exceptional performance on serverless infrastructure.
+
+### 📈 Seamless scalability
+Rust offers seamless scalability, effortlessly handling varying workloads, capable of processing millions of requests per minute while maintaining optimal performance.
 
 ## Quick start
 
