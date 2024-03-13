@@ -10,7 +10,7 @@ async fn hello_world(request: Request) -> Response<Body> {
         },
 
         Some(string) => {
-            let message = format!("Hello {}!", string);
+            let message = format!("Hello {} :)", string);
 
             json!({ "message": message, "version": version.to_string() }).into_response().await
         }
