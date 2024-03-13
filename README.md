@@ -72,9 +72,14 @@ plugins:
 serverless deploy
 ```
 
+## Demo
+
+[![asciicast](https://asciinema.org/a/646679.svg)](https://asciinema.org/a/646679)
+
 ## Examples
 
 - [Basic hello world example](https://github.com/MadebyAe/serverless-plugin-rust/tree/main/examples/hello-world)
+- [OpenAI ChatGPT example](https://github.com/MadebyAe/serverless-plugin-rust/tree/main/examples/openai-chatgpt)
 - [Workspace example](https://github.com/MadebyAe/serverless-plugin-rust/tree/main/examples/workspace)
 
 ## Benchmark
