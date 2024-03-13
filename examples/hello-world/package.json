@@ -1,6 +1,6 @@
 {
   "name": "hello-world",
-  "version": "1.0.3",
+  "version": "1.0.0",
   "description": "**Serverless framework** plugin for blazingly-fast rust functions.",
   "scripts": {
     "deploy": "serverless deploy",
